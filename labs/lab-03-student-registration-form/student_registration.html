@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Registration Form</title>
+    </head>
+
+    <body>
+        <h1>Student Registration Form</h1>
+
+        <form method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <table>
+                    <tr>
+                        <td><label for="full_name">Full Name:</label></td>
+                        <td>
+                            <input type="text" id="full_name" name="full_name" placeholder="Full name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="student_id">Student ID:</label></td>
+                        <td>
+                            <input type="text" id="student_id" name="student_id" placeholder="22-12345-1" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone_number">Phone Number:</label></td>
+                        <td>
+                            <input type="tel" id="phone_number" name="phone_number" placeholder="01XXXXXXXXX" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td>
+                            <input type="date" id="dob" name="dob" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <table>
+                    <tr>
+                        <td><label for="department">Department:</label></td>
+                        <td>
+                            <select id="department" name="department" required>
+                                <option value="cse">CSE</option>
+                                <option value="eee">EEE</option>
+                                <option value="bba">BBA</option>
+                                <option value="english">English</option>
+                                <option value="civil_engineering" selected>Civil Engineering</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="semester">Semester:</label></td>
+                        <td>
+                            <select id="semester" name="semester" required>
+                                <option value="1st">1st Semester</option>
+                                <option value="2nd">2nd Semester</option>
+                                <option value="3rd" selected>3rd Semester</option>
+                                <option value="4th">4th Semester</option>
+                                <option value="5th">5th Semester</option>
+                                <option value="6th">6th Semester</option>
+                                <option value="7th">7th Semester</option>
+                                <option value="8th">8th Semester</option>
+                                
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Skills</legend>
+
+                <p>Programming Languages Known:</p>
+
+                <input type="checkbox" id="c" name="programming_languages_known[]" value="c">
+                <label for="c">C</label><br>
+
+                <input type="checkbox" id="cpp" name="programming_languages_known[]" value="c++">
+                <label for="cpp">C++</label><br>
+            
+                <input type="checkbox" id="java" name="programming_languages_known[]" value="java">
+                <label for="java">Java</label><br>
+
+                <input type="checkbox" id="python" name="programming_languages_known[]" value="python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" id="javascript" name="programming_languages_known[]" value="javascript">
+                <label for="javascript">JavaScript</label><br>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <table>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><textarea id="address" name="address" placeholder="" rows="3" cols="30" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="student_photo">Student Photo:</label></td>
+                        <td><input type="file" id="student_photo" name="student_photo" accept="image/*" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="comments_suggestions">Comments/Suggestions:</label></td>
+                        <td><textarea id="comments_suggestions" name="comments_suggestions" placeholder="Max 200 characters" rows="3" cols="30" maxlength="200" required></textarea></td>
+                    </tr>
+                </table>
+            </fieldset><br><br>
+
+            <button type="submit">Submit Form</button>
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
