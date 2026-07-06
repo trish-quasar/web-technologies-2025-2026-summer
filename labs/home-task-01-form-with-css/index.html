@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Course Counseling Appointment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 id="main-title">Course Counseling Appointment Form</h1>
+
+    <form class="form-box" method="post">
+      <fieldset>
+        <legend>Student Information</legend>
+
+        <table>
+          <tr>
+            <td class="label-cell">
+              <label for="full_name">Full Name:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                placeholder="Full name"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="student_id">Student ID:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="student_id"
+                name="student_id"
+                placeholder="22-12345-1"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="email">Email Address:</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="phone_number">Phone Number:</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                placeholder="01XXXXXXXXX"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <table>
+          <tr>
+            <td class="label-cell">
+              <label for="department">Department:</label>
+            </td>
+            <td>
+              <select id="department" name="department" required>
+                <option value="cse" selected>CSE</option>
+                <option value="eee">EEE</option>
+                <option value="bba">BBA</option>
+                <option value="english">English</option>
+                <option value="civil_engineering">Civil Engineering</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell"><label for="semester">Semester:</label></td>
+            <td>
+              <select id="semester" name="semester" required>
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd" selected>3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+                <option value="7th">7th Semester</option>
+                <option value="8th">8th Semester</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="current_cgpa">Current CGPA:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="current_cgpa"
+                name="current_cgpa"
+                placeholder="Example: 3.50"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Appointment Details</legend>
+
+        <table>
+          <tr>
+            <td class="label-cell">
+              <label for="counseling_type">Counseling Type:</label>
+            </td>
+            <td>
+              <select id="counseling_type" name="counseling_type" required>
+                <option value="course_selection" selected>
+                  Course Selection
+                </option>
+                <option value="retake_planning">Retake Planning</option>
+                <option value="career_guidance">Career Guidance</option>
+                <option value="academic_problem">Academic Problem</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="appointment_date">Appointment Date:</label>
+            </td>
+            <td>
+              <input
+                type="date"
+                id="appointment_date"
+                name="appointment_date"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="time_slot">Preferred Time Slot:</label>
+            </td>
+            <td>
+              <select id="time_slot" name="time_slot" required>
+                <option value="morning" selected>Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">Meeting Type:</td>
+            <td>
+              <input
+                type="radio"
+                id="online"
+                name="meeting_type"
+                value="online"
+                required
+              />
+              <label for="online">Online</label>
+
+              <input
+                type="radio"
+                id="offline"
+                name="meeting_type"
+                value="offline"
+              />
+              <label for="offline">Offline</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Counseling Topics</legend>
+
+        <p class="section-note">Select the topics you want to discuss:</p>
+
+        <input
+          type="checkbox"
+          id="course_load"
+          name="counseling_topics[]"
+          value="course_load"
+        />
+        <label for="course_load">Course Load</label><br />
+
+        <input
+          type="checkbox"
+          id="section_selection"
+          name="counseling_topics[]"
+          value="section_selection"
+        />
+        <label for="section_selection">Section Selection</label><br />
+
+        <input
+          type="checkbox"
+          id="retake_course"
+          name="counseling_topics[]"
+          value="retake_course"
+        />
+        <label for="retake_course">Retake Course</label><br />
+
+        <input
+          type="checkbox"
+          id="career_plan"
+          name="counseling_topics[]"
+          value="career_plan"
+        />
+        <label for="career_plan">Career Plan</label><br />
+
+        <input
+          type="checkbox"
+          id="academic_improvement"
+          name="counseling_topics[]"
+          value="academic_improvement"
+        />
+        <label for="academic_improvement">Academic Improvement</label><br />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <table>
+          <tr>
+            <td class="label-cell">
+              <label for="reason">Reason for Appointment:</label>
+            </td>
+            <td>
+              <textarea
+                id="reason"
+                name="reason"
+                placeholder="Write your reason here"
+                rows="3"
+                cols="30"
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-cell">
+              <label for="comments_suggestions">Comments/Suggestions:</label>
+            </td>
+            <td>
+              <textarea
+                id="comments_suggestions"
+                name="comments_suggestions"
+                placeholder="Max 200 characters"
+                rows="3"
+                cols="30"
+                maxlength="200"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+
+      <button type="submit" id="submit_button">Submit Form</button>
+      <input type="reset" id="reset_button" value="Reset" />
+    </form>
+  </body>
+</html>
