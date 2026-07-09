@@ -3,107 +3,624 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABC College</title>
+    <title>Home | AIUB</title>
+    <link rel="icon" type="image" href="/images/logos/aiub/aiub-logo.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1 id="college-name">ABC College</h1>
+    <nav class="top-bar">
+      <a href="#" class="top-bar-item">
+        <img src="/images/icons/login-icon.png" alt="Login icon" />
+        <span>Login</span>
+      </a>
 
-        <nav>
-          <a href="#welcome">Home</a>
-          <a href="#courses">Courses</a>
-          <a href="#notice">Notice</a>
-          <a href="#campus">Campus</a>
-          <a href="#footer">Contact</a>
-        </nav>
+      <a href="#" class="top-bar-item">
+        <img src="/images/icons/mail-icon-1.png" alt="Mail icon" />
+        <span>Mail</span>
+      </a>
+
+      <a href="#" class="top-bar-item">
+        <img src="/images/icons/contact-us-icon.png" alt="Contact Us icon" />
+        <span>Contact Us</span>
+      </a>
+    </nav>
+
+    <header class="main-header">
+      <a href="index.html" class="aiub-logo">
+        <img src="/images/logos/aiub/aiub-logo.png" alt="AIUB Logo" />
+      </a>
+
+      <div class="aiub-text">
+        <h1>AIUB</h1>
+        <p>American International University - Bangladesh</p>
       </div>
+
+      <nav class="main-nav">
+        <a href="#" class="main-nav-item">About</a>
+        <a href="#" class="main-nav-item">Academics</a>
+        <a href="#" class="main-nav-item">Admission</a>
+        <a href="#" class="main-nav-item">Notice</a>
+        <a href="#" class="main-nav-item">Campus</a>
+        <a href="#" class="main-nav-item">Contact</a>
+
+        <button type="button" class="main-nav-item search-icon-btn">
+          <img
+            src="/images/icons/search-icon.png"
+            alt="Search icon"
+            id="main-nav-search-icon"
+          />
+        </button>
+      </nav>
     </header>
 
-    <section id="welcome" class="welcome-section">
-      <div class="container">
-        <h2>Welcome to ABC College</h2>
-        <p>
-          ABC College is a modern college that provides quality education,
-          skilled teachers, and a friendly learning environment.
+    <section id="welcome-section" class="all-sections">
+      <div class="welcome-section-contents">
+        <h1>Welcome to AIUB</h1>
+        <h2>Where Leaders Are Created</h2>
+        <p class="tagline">
+          AIUB is committed to academic excellence, innovative research and
+          holistic development to prepare students as global leaders and
+          responsible citizens.
         </p>
-        <a href="#" class="apply-btn">Apply Now</a>
+
+        <a href="#" class="welcome-apply-btn">Apply Now <span>&rarr;</span></a>
       </div>
     </section>
 
-    <section id="courses" class="courses-section">
-      <div class="container">
-        <h2>Our Courses</h2>
+    <section id="faculties-section" class="all-sections">
+      <h2>Our Faculties</h2>
 
-        <div class="course-card">
-          <h3>Computer Science</h3>
+      <div class="faculties-container">
+        <div class="faculty-card fhls-card">
+          <span class="new-badge">New</span>
+
+          <div class="faculty-icon">
+            <img src="images/logos/departments/fhls-logo.png" alt="FHLS Logo" />
+          </div>
+
+          <h3>Faculty of Health and Life Sciences</h3>
+
+          <h4>FHLS</h4>
+
           <p>
-            Learn programming, web design, database, and software development.
+            Focuses on health, pharmacy, life sciences and public health
+            education for future professionals.
           </p>
+
+          <a href="#" class="faculty-learn-btn">Learn More</a>
         </div>
 
-        <div class="course-card new-course">
-          <span class="badge">New</span>
-          <h3>Data Science</h3>
-          <p>Study data analysis, statistics, and basic machine learning.</p>
+        <div class="faculty-card fe-card">
+          <div class="faculty-icon">
+            <img src="images/logos/departments/fe-logo.png" alt="FE Logo" />
+          </div>
+
+          <h3>Faculty of Engineering</h3>
+
+          <h4>FE</h4>
+
+          <p>
+            Provides practical engineering education in electrical, electronic,
+            industrial and related technical areas.
+          </p>
+
+          <a href="#" class="faculty-learn-btn">Learn More</a>
         </div>
 
-        <div class="course-card">
-          <h3>Business Administration</h3>
+        <div class="faculty-card fst-card">
+          <div class="faculty-icon">
+            <img src="images/logos/departments/fst-logo.png" alt="FST Logo" />
+          </div>
+
+          <h3>Faculty of Science and Technology</h3>
+
+          <h4>FST</h4>
+
           <p>
-            Learn management, marketing, finance, and business communication.
+            Offers modern programs in computing, data science, software
+            development and technology-based fields.
           </p>
+
+          <a href="#" class="faculty-learn-btn">Learn More</a>
+        </div>
+
+        <div class="faculty-card fass-card">
+          <div class="faculty-icon">
+            <img src="images/logos/departments/fass-logo.png" alt="FASS Logo" />
+          </div>
+
+          <h3>Faculty of Arts and Social Sciences</h3>
+
+          <h4>FASS</h4>
+
+          <p>
+            Develops communication, critical thinking and social understanding
+            through arts and social science programs.
+          </p>
+
+          <a href="#" class="faculty-learn-btn">Learn More</a>
+        </div>
+
+        <div class="faculty-card fba-card">
+          <div class="faculty-icon">
+            <img src="images/logos/departments/fba-logo.png" alt="FBA Logo" />
+          </div>
+
+          <h3>Faculty of Business Administration</h3>
+
+          <h4>FBA</h4>
+
+          <p>
+            Builds strong business knowledge in management, leadership, finance,
+            marketing and entrepreneurship.
+          </p>
+
+          <a href="#" class="faculty-learn-btn">Learn More</a>
         </div>
       </div>
     </section>
 
-    <section id="notice" class="notice-section">
-      <div class="container">
+    <section id="notice-campus-section" class="notice-campus-section">
+      <div class="notice-area">
         <h2>Notice Board</h2>
 
-        <div class="notice-box">
-          <p>Admission for Spring semester is now open.</p>
-          <p>Students are requested to apply before the deadline.</p>
-          <p>Mid-term examination routine will be published next week.</p>
-          <p>Students must bring their ID cards during examination days.</p>
-          <p>The college library will remain open from 9:00 AM to 5:00 PM.</p>
-          <p>Annual sports registration is going on.</p>
-          <p>Course registration must be completed within the given time.</p>
-          <p>All students should check the notice board regularly.</p>
+        <div class="notice-board">
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jul</span>
+              <strong>02</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Payment Schedule for Summer 2025-2026 Second Installment</h3>
+              <p>
+                Students are requested to clear the second installment as per
+                AIUB payment policy.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jul</span>
+              <strong>02</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Admission Test Final Result Fall 2026-27</h3>
+              <p>
+                Admission and registration procedure and schedule have been
+                published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>30</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Thesis Day for All BSCS Thesis Groups of Spring 2025-26</h3>
+              <p>
+                Students are advised to check the official details for thesis
+                day instructions.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>29</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Admission Test Written Result and Viva Schedule</h3>
+              <p>
+                Written exam result and on-campus viva schedule have been
+                announced.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>29</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Guidelines for Probation Students Regarding Registration</h3>
+              <p>
+                Guidelines for probation students from different faculties have
+                been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>28</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Possible Downtime Due to AIUB Server Maintenance</h3>
+              <p>
+                UMS, portal, admission and career systems may be unavailable
+                during maintenance.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>24</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Admission Test Written Exam Fall 2026-27</h3>
+              <p>
+                Written result information for selected programs has been
+                announced.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>24</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Holiday Notice: Ashura</h3>
+              <p>AIUB has published the holiday notice for Ashura.</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>21</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Call for Participation - MCO Student Essay Competition</h3>
+              <p>
+                Students are invited to participate in the MCO student essay
+                competition.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>14</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Announcement Notice of AIUB World Cup 2026</h3>
+              <p>AIUB World Cup 2026 announcement notice has been published.</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>04</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Freshman Student Orientation Schedule</h3>
+              <p>
+                Freshman student orientation schedule for Summer 2025-2026 has
+                been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>04</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>25th Convocation Notice</h3>
+              <p>
+                Graduation certificate processing and provisional certificate
+                application notice has been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>03</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>
+                Survey for Free Online Courses through AIUB's Collaboration
+              </h3>
+              <p>
+                AIUB has announced a survey related to free online courses
+                through collaboration.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>03</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Final Term Exam Schedule of Spring 2025-26</h3>
+              <p>
+                The final term exam schedule for Spring 2025-26 has been
+                published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>02</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Student Exchange Program at Ho Chi Minh City</h3>
+              <p>
+                Details about the student exchange program have been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>01</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Academic Calendar: Summer 2025-26</h3>
+              <p>
+                The academic calendar for Summer 2025-26 has been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>01</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Instructions for Internship CV Submission</h3>
+              <p>
+                CV submission instructions for internship students have been
+                announced.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>Jun</span>
+              <strong>01</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Internship Registration Instruction FBA</h3>
+              <p>
+                Internship registration instructions for FBA students have been
+                published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>May</span>
+              <strong>24</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Summer Final Registration Steps for EEE, CoE and IPE</h3>
+              <p>
+                Final registration steps for engineering department students
+                have been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>May</span>
+              <strong>24</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>FST Final Registration Notice: Summer 2025-26</h3>
+              <p>
+                Final registration notice for FST students has been published.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <span>May</span>
+              <strong>21</strong>
+              <span>2026</span>
+            </div>
+
+            <div class="notice-text">
+              <h3>Final Registration Flowchart Summer 2025-26</h3>
+              <p>
+                The final registration flowchart for Summer 2025-26 has been
+                published.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="campus" class="campus-section">
-      <div class="container">
+      <div class="campus-area">
         <h2>Our Campus</h2>
 
         <div class="campus-box">
           <img
-            src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=900&q=80"
-            alt="ABC College Campus"
+            class="campus-slide slide-1"
+            src="/images/backgrounds/campus-1.webp"
+            alt="AIUB Campus 1"
+          />
+          <img
+            class="campus-slide slide-2"
+            src="/images/backgrounds/campus-2.jpg"
+            alt="AIUB Campus 2"
+          />
+          <img
+            class="campus-slide slide-3"
+            src="/images/backgrounds/campus-3.jpg"
+            alt="AIUB Campus 3"
+          />
+          <img
+            class="campus-slide slide-4"
+            src="/images/backgrounds/campus-4.jpg"
+            alt="AIUB Campus 4"
+          />
+          <img
+            class="campus-slide slide-5"
+            src="/images/backgrounds/campus-5.webp"
+            alt="AIUB Campus 5"
+          />
+          <img
+            class="campus-slide slide-6"
+            src="/images/backgrounds/campus-6.jpg"
+            alt="AIUB Campus 6"
+          />
+          <img
+            class="campus-slide slide-7"
+            src="/images/backgrounds/campus-7.webp"
+            alt="AIUB Campus 7"
+          />
+          <img
+            class="campus-slide slide-8"
+            src="/images/backgrounds/campus-8.jpg"
+            alt="AIUB Campus 8"
+          />
+          <img
+            class="campus-slide slide-9"
+            src="/images/backgrounds/campus-9.jpg"
+            alt="AIUB Campus 9"
           />
 
           <div class="campus-info">
-            <h3>Modern Campus</h3>
+            <h3>A Campus That Inspires</h3>
+
             <p>
-              Our campus has classrooms, library, computer labs, and open spaces
-              for students.
+              Our vibrant campus offers modern facilities, a nurturing
+              environment and diverse opportunities to learn, grow and lead.
             </p>
+
+            <a href="#" class="campus-explore-btn">Explore Campus</a>
           </div>
         </div>
       </div>
     </section>
 
-    <a href="#footer" class="contact-btn">Contact Us</a>
+    <footer id="contact-section" class="footer-section">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img
+            class="footer-logo"
+            src="/images/logos/aiub/aiub-logo-white.png"
+            alt="AIUB Logo"
+          />
 
-    <footer id="footer">
-      <div class="container">
-        <h2>ABC College</h2>
-        <p>Email: info@abccollege.edu</p>
-        <p>Phone: +880 1234-567890</p>
+          <div class="footer-aiub-text">
+            <h2>
+              American International University-<br />
+              Bangladesh (AIUB)
+            </h2>
+
+            <p>Where leaders are created</p>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <img src="/images/icons/mail-icon-2.png" alt="Mail Icon" />
+
+          <div>
+            <h3>E-mail Us</h3>
+            <p>info@aiub.edu</p>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <img src="/images/icons/phone-icon.png" alt="Phone Icon" />
+
+          <div>
+            <h3>Telephone</h3>
+            <p>+88 02 841 4046-9; +88 02 841 4050</p>
+          </div>
+        </div>
+
+        <div class="footer-contact-item footer-location">
+          <img src="/images/icons/location-icon.png" alt="Location Icon" />
+
+          <div>
+            <h3>Visit Us</h3>
+            <p>408/1, Kuratoli, Khilkhet, Dhaka 1229</p>
+          </div>
+        </div>
       </div>
+
+      <p class="footer-copy">
+        &copy; 2024 American International University-Bangladesh (AIUB). All
+        Rights Reserved.
+      </p>
     </footer>
+
+    <section id="fixed-contact-us-section">
+      <a href="#contact-section" class="fixed-contact-us-tag">
+        <span class="fixed-contact-us-icon">
+          <img src="/images/icons/phone-mail-icon.png" alt="Phone Icon" />
+        </span>
+
+        <span class="fixed-contact-us-text">Contact Us</span>
+      </a>
+    </section>
   </body>
 </html>
