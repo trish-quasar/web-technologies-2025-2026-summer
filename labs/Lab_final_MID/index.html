@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>University Club Membership Registration</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 id="main-title">University Club Membership Registration</h1>
+
+    <form id="club_form" class="form-box" method="post" novalidate>
+      <div class="main-sections">
+        <fieldset id="personal_information">
+          <legend>Personal Information</legend>
+
+          <div class="personal-fields">
+            <div class="personal-row">
+              <label for="first_name">First Name:</label>
+
+              <div>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="Enter first name"
+                  required
+                />
+
+                <small id="firstNameError" class="error"></small>
+              </div>
+            </div>
+
+            <div class="personal-row">
+              <label for="last_name">Last Name:</label>
+
+              <div>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="Enter last name"
+                  required
+                />
+
+                <small id="lastNameError" class="error"></small>
+              </div>
+            </div>
+
+            <div class="personal-row">
+              <label for="email">Email Address:</label>
+
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required
+                />
+
+                <small id="emailError" class="error"></small>
+              </div>
+            </div>
+
+            <div class="personal-row">
+              <label for="password">Password:</label>
+
+              <div>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="8 characters, uppercase, lowercase and number"
+                  required
+                />
+
+                <small id="passwordError" class="error"></small>
+              </div>
+            </div>
+
+            <div class="personal-row">
+              <span class="main-label">Gender:</span>
+
+              <div>
+                <div class="radio-options">
+                  <label>
+                    <input type="radio" name="gender" value="Male" />
+                    Male
+                  </label>
+
+                  <label>
+                    <input type="radio" name="gender" value="Female" />
+                    Female
+                  </label>
+
+                  <label>
+                    <input type="radio" name="gender" value="Other" />
+                    Other
+                  </label>
+                </div>
+
+                <small id="genderError" class="error"></small>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="club_information">
+          <legend>Club Information</legend>
+
+          <p class="section-note">Select the clubs you are interested in:</p>
+
+          <div class="club-list">
+            <label class="club-item">
+              <input type="checkbox" name="interested_club" value="Arts Club" />
+              Arts Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Business Club"
+              />
+              Business Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Engineering Students Community"
+              />
+              Engineering Students Community
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Computer Club"
+              />
+              Computer Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Drama Club"
+              />
+              Drama Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="English Club"
+              />
+              English Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Environment Club"
+              />
+              Environment Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Economics Club"
+              />
+              Economics Club
+            </label>
+
+            <label class="club-item">
+              <input type="checkbox" name="interested_club" value="Film Club" />
+              Film Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="International Students Association"
+              />
+              International Students Association
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Law and Mooting Society"
+              />
+              Law and Mooting Society
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Oratory Club"
+              />
+              Oratory Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Performing Arts Club"
+              />
+              Performing Arts Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Photography Club"
+              />
+              Photography Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Social Welfare Club"
+              />
+              Social Welfare Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Research for Development Club"
+              />
+              Research for Development Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Robotics Club"
+              />
+              Robotics Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Volunteer Unit"
+              />
+              Volunteer Unit
+            </label>
+
+            <label class="club-item">
+              <input type="checkbox" name="interested_club" value="AIESEC" />
+              AIESEC
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="IEEE Student Branch"
+              />
+              IEEE Student Branch
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Engineering Students Association"
+              />
+              Engineering Students Association
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Duke of Edinburgh Award Program"
+              />
+              Duke of Edinburgh Award Program
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="IEOM Society"
+              />
+              IEOM Society
+            </label>
+
+            <label class="club-item">
+              <input type="checkbox" name="interested_club" value="Law Club" />
+              Law Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Human Rights Club"
+              />
+              Human Rights Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Animation Club"
+              />
+              Animation Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Journalism Club"
+              />
+              Journalism Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Media Club"
+              />
+              Media Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Language Club"
+              />
+              Language Club
+            </label>
+
+            <label class="club-item">
+              <input type="checkbox" name="interested_club" value="Book Club" />
+              Book Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Diversity Club"
+              />
+              Diversity Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Strategic Leaders Club"
+              />
+              Strategic Leaders Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Finance Club"
+              />
+              Finance Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Marketing Club"
+              />
+              Marketing Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Supply Chain Club"
+              />
+              Supply Chain Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Tourism and Hospitality Club"
+              />
+              Tourism and Hospitality Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Electronics and Computer Engineering Club"
+              />
+              Electronics and Computer Engineering Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Green Energy Club"
+              />
+              Green Energy Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Postgraduate Engineering Society"
+              />
+              Postgraduate Engineering Society
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Architecture and Heritage Club"
+              />
+              Architecture and Heritage Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Competitive Programming Club"
+              />
+              Competitive Programming Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Game Development Club"
+              />
+              Game Development Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Cyber Security Club"
+              />
+              Cyber Security Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Interactive Computing Club"
+              />
+              Interactive Computing Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Software Engineering Club"
+              />
+              Software Engineering Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Network and Security Club"
+              />
+              Network and Security Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="Computing Graduate Club"
+              />
+              Computing Graduate Club
+            </label>
+
+            <label class="club-item">
+              <input
+                type="checkbox"
+                name="interested_club"
+                value="eSports Club"
+              />
+              eSports Club
+            </label>
+          </div>
+
+          <small id="clubError" class="error"></small>
+
+          <div class="category-row">
+            <label for="club_category">Club Category:</label>
+
+            <div>
+              <select id="club_category" name="club_category" required>
+                <option value="">-- Select Club Category --</option>
+
+                <option value="arts_culture_media">
+                  Arts, Culture and Media
+                </option>
+
+                <option value="business_finance">
+                  Business, Finance and Leadership
+                </option>
+
+                <option value="computing_technology">
+                  Computing and Technology
+                </option>
+
+                <option value="engineering">
+                  Engineering and Professional
+                </option>
+
+                <option value="law_academic">Law, Research and Academic</option>
+
+                <option value="welfare_environment">
+                  Social Welfare and Environment
+                </option>
+
+                <option value="international">
+                  International and Student Development
+                </option>
+
+                <option value="gaming">Gaming and eSports</option>
+              </select>
+
+              <small id="categoryError" class="error"></small>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <fieldset id="additional_information">
+        <legend>Additional Information</legend>
+
+        <div class="reason-row">
+          <label for="join_reason"> Why do you want to join? </label>
+
+          <div>
+            <textarea
+              id="join_reason"
+              name="join_reason"
+              placeholder="Write at least 20 characters"
+              required
+            ></textarea>
+
+            <small id="reasonError" class="error"></small>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" id="submit_button">Submit Form</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
